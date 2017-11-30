@@ -1,0 +1,28 @@
+#git clone <URL> - clone entire repo
+
+#auto color for diff:
+git config --global color.ui auto
+
+#git diff //diff bw two commit
+#git show //diff of parent commit id
+
+#git log - gives the timestamp of repo
+#git log --graph --online 
+		//gives the one line description of commit changes
+
+#git branch - gives the branch of your repo
+
+#git checkout -b <branch> 
+		//create a new branch and points to current one
+
+#git merge branch1 branch2
+
+#During merge conflicts: 
+	//resolve manually which one makes finally
+
+!!!git-hub
+	#create a repo name on git-hub
+	#git remote add origin <url of repo in github>
+	#git push origin master
+	#git remote -v //display remote branch
+	#git push origin master
