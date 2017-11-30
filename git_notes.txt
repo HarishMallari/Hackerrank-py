@@ -1,0 +1,65 @@
+#git clone <URL> - clone entire repo
+
+#auto color for diff:
+git config --global color.ui auto
+
+#git diff //diff bw two commit
+#git show //diff of parent commit id
+
+#git log - gives the timestamp of repo
+#git log --graph --online 
+		//gives the one line description of commit changes
+
+#git branch - gives the branch of your repo
+
+#git checkout -b <branch> 
+		//create a new branch and points to current one
+
+#git merge branch1 branch2
+
+#During merge conflicts: 
+	//resolve manually which one makes finally
+
+!!!git-hub
+	#create a repo name on git-hub
+	#git remote add origin <url of repo in github>
+	#git push origin master
+	#git remote -v //display remote branch
+	#git push origin master
+
+	#modification on remote (git-hub) and reflect on local
+	#git pull origin master
+
+!!!pull-requests
+	#git checkout -b diff-oil // create a new branch and make changes
+	#git add diff-oil
+	#git commit
+	#git push origin diff-oil // push diff-oil to git-hub master 
+		--in git-hub ask for pull-request
+		--if owner approves
+	#git pull origin master//update local master also with ghub master
+	
+	#if-conflicts (when other people contirbuting)
+		-dont merge new-branch with master	
+		-after making the changes, pull-request
+		-resolve the conflicts (if any) and ask for pull requests
+		-pull requests ensures there is no conflict changes 
+
+!!!-fork uptodate
+	#letus fork f1 from org1
+	#git remote add upstream <org1>
+	#git checkout master
+	#git pull updteam master
+	#git checkout change-branch	
+	#git merge master change-branch
+	//Resolve any conflicts
+	#git add <changed-file>
+	#git commit
+	#git push origin <changes-branch>
+	#git checkout <master>
+	#git push origin master
+
+
+			
+
+
